@@ -1,0 +1,135 @@
+/* Default styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  align-content: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="search"] {
+  margin-right: 1100px;
+}
+
+.responsive-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.table-container {
+  position: relative;
+  overflow: auto;
+  max-height: 300px;
+}
+
+.table-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), antiqueWhite 100%);
+}
+
+/* Responsive styles */
+@media (max-width: 930px) {
+  /* #root */
+  #root {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  /* .search-container */
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 0;
+  }
+
+  /* .search-container input[type="search"] */
+  .search-container input[type="search"] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* .responsive-section */
+  .responsive-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* .center */
+  .center {
+    height: auto;
+    width: auto;
+  }
+
+  /* .table-container */
+  .table-container {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* #root */
+  #root {
+    padding: 0.5rem;
+  }
+
+  /* .card */
+  .card {
+    padding: 1em;
+  }
+
+  /* .search-container */
+  .search-container {
+    margin: 2px 0;
+  }
+
+  /* .responsive-section */
+  .responsive-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .center */
+  .center {
+    height: auto;
+    width: auto;
+  }
+
+  /* .table-container */
+  .table-container {
+    max-height: 150px;
+  }
+}

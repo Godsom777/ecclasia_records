@@ -1,0 +1,60 @@
+
+
+.app-bar {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 8px 16px 0px 2em #04c804aa);
+}
+
+
+.logo {
+  height: 120px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0px 8px 16px 0px 2em #04c804aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0px 8px 16px 0px 2em #04c804aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 930px) {
+    .responsive-section {
+      flex-direction: column;
+    }
+
+    .Title {
+      font-size: 1em;
+    }
+
+  
+    button {
+     padding: 0.5em .5em !important;
+        font-size: 0.8em !important;
+      text-align: center !important;
+   
+    }
+    
+  }
