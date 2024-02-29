@@ -7,7 +7,7 @@ function Appbar() {
     <div className="app-bar">
       <img src={logo} className="logo" alt="Logo" style={{ height: "70px" }} />
       <h2 className="Title" style={{ fontWeight: "bold" }}>
-        THE ECCLESIA
+       OWARCH - THE ECCLESIA
       </h2>
       <button onClick={() => alert("For Admins Login")}>Admin Login</button>
     </div>
